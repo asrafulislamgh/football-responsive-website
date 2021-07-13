@@ -40,7 +40,7 @@ img {
         Navigation Section
  ========================== */
 .navbar-detail {
-  padding: 42px 0;
+  padding: 42px 0 67px;
   width: 100%;
 }
 .navbar-item {
@@ -72,6 +72,7 @@ img {
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
+  display: inline-block;
 }
 .linked-btn:hover {
   background-color: #ac0240;
@@ -142,7 +143,8 @@ img {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.player-img img {
+.player-img img,
+.woman-football-news img {
   width: 100%;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -155,10 +157,12 @@ img {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
-.player-img {
+.player-img,
+.woman-football-news {
   overflow: hidden;
 }
-.player-img:hover img {
+.player-img:hover img,
+.woman-football-news:hover img {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -173,19 +177,23 @@ img {
   padding: 16px 0 10px;
 }
 .player-text,
-.blog-text {
+.blog-text,
+.woman-football-subtext,
+.woman-text {
   color: #6c6c6c;
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
+  margin-bottom: 20px;
 }
 
 /* ========================
         Blog Section
  ========================== */
 
-.blog-content {
-  width: 1050px;
+.blog-content,
+.woman-football-section {
+  max-width: 1050px;
   margin: 0 auto;
   margin-bottom: 150px;
 }
@@ -195,7 +203,7 @@ img {
 }
 .blog-text {
   text-align: left;
-  padding: 10px 0 24px;
+  padding: 10px 0 0;
 }
 .linked-btn {
   display: inline-block;
@@ -204,12 +212,37 @@ img {
   margin-left: 8px;
 }
 /* ========================
+     Woman footbal Section
+ ========================== */
+#woman-football {
+  background-color: rgb(199, 255, 255);
+  padding: 50px 0;
+}
+.woman-football-news-container {
+  justify-content: space-between;
+}
+.woman-football-news {
+  width: 330px;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.woman-football-section {
+  margin-bottom: 0;
+}
+/* ========================
         Footer Section
  ========================== */
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 165px;
 }
 .footer-logo {
   max-width: 483px;
