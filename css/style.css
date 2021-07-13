@@ -1,0 +1,110 @@
+/* ========================
+    Google Fonts- Lato
+ ========================== */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* ========================
+        Generic style
+ ========================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+/* ========================
+        Navigation Section
+ ========================== */
+.navbar-detail {
+  padding: 42px 0;
+  width: 100%;
+}
+.navbar-item {
+  display: flex;
+}
+.navbar-item li {
+  margin-right: 36px;
+}
+.navbar-item a {
+  color: rgb(219, 218, 218);
+  padding-bottom: 15px;
+  font-size: 16px;
+}
+.navbar-item li:hover a {
+  color: white;
+  border-bottom: 2px solid white;
+}
+.linked-btn {
+  padding: 12px 34px;
+  background-color: #e02c6d;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: white;
+}
+.linked-btn:hover {
+  background-color: #ac0240;
+}
+.fa-sign-in-alt {
+  color: white;
+  font-size: 16px;
+  padding-right: 5px;
+}
+/* ========================
+        Top Banner
+ ========================== */
+.top-banner {
+  background-color: #2d25a0;
+  height: 677px;
+  width: 100%;
+}
+.banner-info,
+.banner-img {
+  flex-basis: 50%;
+}
+.banner-img img {
+  width: 100%;
+}
+.banner-img {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.banner-img:hover {
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
+.banner-heading {
+  font-size: 64px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 27px;
+}
