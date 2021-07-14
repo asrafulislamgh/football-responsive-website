@@ -326,7 +326,9 @@ li .fab:hover {
   .woman-football-title,
   .woman-text,
   .latest-video-title,
-  .video-text {
+  .video-text,
+  .blog-title,
+  .blog-text {
     text-align: center;
   }
   .latest-video-container {
@@ -334,6 +336,11 @@ li .fab:hover {
   }
   .latest-video-detail {
     margin-top: 40px;
+  }
+  .woman-football-text .linked-btn {
+    width: 180px;
+    display: block;
+    margin: 30px auto;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -357,6 +364,11 @@ li .fab:hover {
   .blog-content {
     flex-direction: column;
   }
+  .blog-detail .linked-btn {
+    width: 180px;
+    display: block;
+    margin: 30px auto;
+  }
   .blog-img {
     margin-top: 40px;
   }
@@ -365,5 +377,26 @@ li .fab:hover {
   }
   .woman-football-section {
     padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-detail {
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .navbar-item li {
+    padding: 20px 0;
+    margin: 0;
+  }
+  .top-banner-wrapper {
+    flex-direction: column;
+  }
+  .banner-heading {
+    text-align: center;
   }
 }
