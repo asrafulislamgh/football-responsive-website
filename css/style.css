@@ -311,5 +311,20 @@ li .fab:hover {
         Media Queries
  ========================== */
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1200px) {
+  .top-banner-wrapper,
+  .logo,
+  .login {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .banner-heading {
+    font-size: 48px;
+  }
+  .top-banner-wrapper,
+  .logo,
+  .login {
+    padding: 0 30px;
+  }
 }
