@@ -24,10 +24,12 @@ li {
 .flex {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .flex-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .container {
   max-width: 1160px;
@@ -39,6 +41,11 @@ img {
 /* ========================
         Navigation Section
  ========================== */
+.logo h1 {
+  color: white;
+  font-size: 36px;
+  flex-basis: 20%;
+}
 .navbar-detail {
   padding: 42px 0 67px;
   width: 100%;
@@ -128,8 +135,8 @@ img {
 .players-detail {
   width: 1050px;
   display: grid;
-  grid-template-columns: repeat(3, 330px);
-  grid-template-rows: repeat(4, 474px);
+  grid-template-columns: repeat(auto-fit, 330px);
+  grid-template-rows: repeat(auto-fit, 474px);
   grid-gap: 30px 30px;
   margin-bottom: 165px;
 }
@@ -195,10 +202,15 @@ img {
  ========================== */
 
 .blog-content,
-.woman-football-section {
+.woman-football-section,
+.latest-video-section {
   max-width: 1050px;
   margin: 0 auto;
   margin-bottom: 150px;
+}
+.blog-content {
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .blog-title {
   font-size: 48px;
@@ -213,6 +225,12 @@ img {
 }
 .fa-arrow-right {
   margin-left: 8px;
+}
+.blog-detail {
+  width: 100%;
+}
+.blog-img {
+  width: 100%;
 }
 /* ========================
      Woman footbal Section
@@ -243,24 +261,20 @@ img {
         Video Section
  ========================== */
 .latest-video-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .latest-video-detail {
   width: 330px;
-}
-.latest-video-detail iframe {
-  height: auto;
-  width: 100%;
-}
-.latest-video-section {
-  width: 1050px;
-  margin: 0 auto;
+  margin-top: 20px;
 }
 .latest-video-section .linked-btn {
-  width: 180px;
+  width: 160px;
   display: block;
   margin: 30px auto;
 }
+
 /* ========================
         Footer Section
  ========================== */
@@ -268,7 +282,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 165px;
 }
 .footer-logo {
   max-width: 483px;
@@ -292,4 +305,11 @@ li .fab:hover {
 .copyright {
   color: black;
   margin-bottom: 63px;
+}
+
+/* ========================
+        Media Queries
+ ========================== */
+
+@media only screen and (max-width: 980px) {
 }
