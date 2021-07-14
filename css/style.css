@@ -395,7 +395,6 @@ li .fab:hover {
     padding: 0 30px;
   }
 }
-
 /* ==== For Mobile ==== */
 
 @media only screen and (max-width: 768px) {
@@ -409,7 +408,7 @@ li .fab:hover {
     padding: 10px 0;
   }
   .navbar-item li {
-    padding: 20px 0;
+    padding: 14px 0;
     margin: 0;
   }
   .top-banner-wrapper {
