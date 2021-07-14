@@ -60,6 +60,11 @@ img {
   color: rgb(219, 218, 218);
   padding-bottom: 15px;
   font-size: 16px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 .navbar-item li:hover a {
   color: white;
@@ -138,7 +143,7 @@ img {
   grid-template-columns: repeat(auto-fit, 330px);
   grid-template-rows: repeat(auto-fit, 474px);
   grid-gap: 30px 30px;
-  margin-bottom: 165px;
+  margin-bottom: 65px;
 }
 .player,
 .latest-video-detail {
@@ -206,7 +211,7 @@ img {
 .latest-video-section {
   max-width: 1050px;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 90px;
 }
 .blog-content {
   flex-wrap: nowrap;
@@ -238,7 +243,7 @@ img {
 #woman-football {
   background-color: rgb(199, 255, 255);
   padding: 50px 0;
-  margin-bottom: 160px;
+  margin-bottom: 90px;
 }
 .woman-football-news-container {
   justify-content: space-between;
@@ -285,6 +290,7 @@ img {
 }
 .footer-logo {
   max-width: 483px;
+  padding: 0 30px;
 }
 .social-icons {
   display: flex;
@@ -321,14 +327,12 @@ li .fab:hover {
     justify-content: space-evenly;
   }
   .blog-detail {
-    padding-left: 30px;
+    padding: 0 20px;
   }
   .woman-football-title,
   .woman-text,
   .latest-video-title,
-  .video-text,
-  .blog-title,
-  .blog-text {
+  .video-text {
     text-align: center;
   }
   .latest-video-container {
@@ -363,6 +367,13 @@ li .fab:hover {
   }
   .blog-content {
     flex-direction: column;
+  }
+  .blog-title,
+  .blog-text {
+    text-align: center;
+  }
+  .blog-detail {
+    padding: 30px;
   }
   .blog-detail .linked-btn {
     width: 180px;
