@@ -399,4 +399,16 @@ li .fab:hover {
   .banner-heading {
     text-align: center;
   }
+  .banner-img {
+    z-index: 3;
+    margin-top: 50px;
+  }
+  .top-banner {
+    height: auto;
+  }
+  .banner-info .linked-btn {
+    width: 170px;
+    margin: 30px auto;
+    display: block;
+  }
 }
