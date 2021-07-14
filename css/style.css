@@ -317,6 +317,8 @@ li .fab:hover {
         Media Queries
  ========================== */
 
+/* ==== For Laptop ==== */
+
 @media only screen and (max-width: 1200px) {
   .top-banner-wrapper,
   .logo,
@@ -347,6 +349,9 @@ li .fab:hover {
     margin: 30px auto;
   }
 }
+
+/* ==== For Tablet ==== */
+
 @media only screen and (max-width: 992px) {
   .flex-nav {
     flex-direction: column;
@@ -390,6 +395,9 @@ li .fab:hover {
     padding: 0 30px;
   }
 }
+
+/* ==== For Mobile ==== */
+
 @media only screen and (max-width: 768px) {
   .navbar-detail {
     align-items: center;
