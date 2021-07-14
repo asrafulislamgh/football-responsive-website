@@ -317,14 +317,53 @@ li .fab:hover {
   .login {
     padding: 0 30px;
   }
+  .players-detail {
+    justify-content: space-evenly;
+  }
+  .blog-detail {
+    padding-left: 30px;
+  }
+  .woman-football-title,
+  .woman-text,
+  .latest-video-title,
+  .video-text {
+    text-align: center;
+  }
+  .latest-video-container {
+    justify-content: space-evenly;
+  }
+  .latest-video-detail {
+    margin-top: 40px;
+  }
 }
 @media only screen and (max-width: 992px) {
+  .flex-nav {
+    flex-direction: column;
+  }
+  .navbar-item {
+    padding: 50px 0;
+  }
   .banner-heading {
     font-size: 48px;
   }
   .top-banner-wrapper,
   .logo,
   .login {
+    padding: 0 30px;
+  }
+  .players-detail {
+    justify-content: space-evenly;
+  }
+  .blog-content {
+    flex-direction: column;
+  }
+  .blog-img {
+    margin-top: 40px;
+  }
+  .woman-football-news-container {
+    justify-content: space-evenly;
+  }
+  .woman-football-section {
     padding: 0 30px;
   }
 }
